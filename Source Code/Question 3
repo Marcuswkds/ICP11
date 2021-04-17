@@ -42,7 +42,7 @@ result = np.argmax(model.predict(X_test), axis=-1)  # Array for categories.
 images = list(zip(X_test, y_test))
 
 # Plotting images and their respective labels.
-for index, (image, label) in enumerate(images[:6]):
+for index, (image, label) in enumerate(images[:4]):
     plt.subplot(2, 3, index + 1)
     plt.imshow(image, interpolation='nearest')
     plt.title("Label " + '%i' % result[index])
